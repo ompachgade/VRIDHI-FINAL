@@ -12,7 +12,7 @@ import {
     getDoc 
 } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
 
-document.addEventListener("DOMContentLoaded", () => {
+// Removed DOMContentLoaded wrapper since type="module" is deferred automatically
     
     const loginBtn = document.getElementById("login-btn");
     const signupBtn = document.getElementById("signup-btn");
@@ -228,4 +228,4 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Please log in first!");
         }
     });
-});
+
